@@ -1,0 +1,76 @@
+version: 2
+
+sources:
+  - name: erpnorthwind
+    tables:
+
+      - name: public_categories
+        description: Essa é a tabela de categories
+        columns:
+          - name: category_id
+            description: Primary key of the categories table
+            tests:
+              - unique
+              - not_null
+
+      - name: public_customers
+        description: Essa é a tabela de customers
+        columns:
+          - name: customer_id
+            description: Primary key of the customers table
+            tests:
+              - unique
+              - not_null
+
+      - name: public_employees
+        description: Essa é a tabela de employees
+        columns:
+          - name: employee_id
+            description: Primary key of the employees table
+            tests:
+              - unique
+              - not_null
+
+      - name: public_order_details
+        description: Essa é a tabela de order_details
+        columns:
+          - name: order_id
+            description: Primary key of the order_details table
+            tests:
+              - not_null
+
+      - name: public_orders
+        description: Essa é a tabela de orders
+        columns:
+          - name: order_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+
+      - name: public_products
+        description: Essa é a tabela de products
+        columns:
+          - name: product_id
+            description: Primary key of the products table
+            tests:
+              - unique
+              - not_null
+
+      - name: public_shippers
+        description: Essa é a tabela de shippers
+        columns:
+          - name: shipper_id
+            description: Primary key of the shippers table
+            tests:
+              - unique
+              - not_null
+
+      - name: public_suppliers
+        description: Essa é a tabela de suppliers
+        columns:
+          - name: supplier_id
+            description: Primary key of the suppliers table
+            tests:
+              - unique
+              - not_null
