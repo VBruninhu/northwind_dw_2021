@@ -53,6 +53,8 @@ with
             products.product_sk,
             shippers.shipper_id,
             shippers.shipper_sk,
+            suppliers.supplier_id,
+            suppliers.supplier_sk,
             orders.order_date,
             orders.ship_region,
             orders.shipped_date,
