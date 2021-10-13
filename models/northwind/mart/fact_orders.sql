@@ -55,7 +55,6 @@ with
             shippers.shipper_sk,
             suppliers.supplier_id,
             suppliers.supplier_sk,
-            order_details.product_id,
             order_details.unit_price,
             order_details.quantity,
             order_details.discount,
